@@ -77,7 +77,7 @@ export default {
 .section::before {
   content: "";
   position: absolute;
-  background: url(https://media.istockphoto.com/photos/senator-of-ancient-rome-picture-id1270935214?k=20&m=1270935214&s=612x612&w=0&h=5q4cZUeOdzK-k4qXedMIZqlAo1ebgsteAuFyi-IyKQY=);
+  background: url("../assets/img/Block6/grek.jpg");
   width: 612px;
   height: 344px;
   right: 0;

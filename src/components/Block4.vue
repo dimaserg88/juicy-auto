@@ -84,12 +84,8 @@ export default {
   },
   methods: {},
   setup() {
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
-    const onSlideChange = () => {
-      console.log("slide change");
-    };
+    const onSwiper = (swiper) => {};
+    const onSlideChange = () => {};
     return {
       onSwiper,
       onSlideChange,
@@ -124,7 +120,6 @@ export default {
   opacity: 0.1;
   background-position: 0px 0px;
   background-repeat: no-repeat;
-  /* clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%); */
 }
 .section:before {
   content: "";
