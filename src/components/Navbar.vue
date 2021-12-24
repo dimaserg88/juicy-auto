@@ -166,6 +166,7 @@ ul li a {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: 0.5s;
 }
 .btn-min span {
   font-weight: 700;
@@ -173,6 +174,13 @@ ul li a {
   letter-spacing: 0.1em;
   color: #e00020;
   text-transform: uppercase;
+  transition: 0.5s;
+}
+.btn-min:hover {
+  background: #e00020;
+}
+.btn-min:hover span {
+  color: white;
 }
 .contacts {
   display: flex;

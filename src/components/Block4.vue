@@ -13,6 +13,7 @@
       :modules="modules"
       :slides-per-view="1"
       :space-between="20"
+      loop="true"
       @swiper="onSwiper"
       @slideChange="onSlideChange"
     >

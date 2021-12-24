@@ -10,7 +10,9 @@
           </div>
           <div class="block">
             <div class="sub-title">E-mail</div>
-            <a href="mailto:asd@local.ru" class="text">start@rb-team.ru</a>
+            <a href="mailto:start@juicy-auto.ru" class="text"
+              >start@juicy-auto.ru</a
+            >
           </div>
           <div class="block">
             <div class="sub-title">Адрес</div>
