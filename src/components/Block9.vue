@@ -93,6 +93,7 @@ export default {
             if (response.data.status == "ok") {
               this.inputPhone = "";
               this.inputName = "";
+              this.markaAuto = "";
             }
           });
       }
