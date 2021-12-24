@@ -31,15 +31,44 @@
                 <div class="input__icon">
                   <img src="@/assets/img/user.svg" alt="" />
                 </div>
-                <input type="text" placeholder="Ваше имя" />
+                <input v-model="inputName" type="text" placeholder="Ваше имя" />
               </div>
               <div class="input__wrap">
                 <div class="input__icon">
                   <img src="@/assets/img/phone.svg" alt="" />
                 </div>
-                <input type="text" placeholder="Ваш телефон" />
+                <input
+                  ref="inputPhone"
+                  v-model="inputPhone"
+                  type="text"
+                  placeholder="Ваш телефон"
+                />
+                <img
+                  v-if="inputPhoneValid"
+                  src="@/assets/img/Block6/done.svg"
+                  alt=""
+                  class="inputPhoneValid"
+                />
               </div>
-              <div class="submit">Отправить заявку</div>
+              <div
+                @click="sendForm"
+                class="submit"
+                :style="[
+                  !inputPhoneValid
+                    ? {
+                        background: 'black',
+                        cursor: 'not-allowed',
+                        color: '#484848',
+                        boxShadow: '0px 0px 25px rgb(224 0 32 / 0%)',
+                      }
+                    : null,
+                ]"
+              >
+                Отправить заявку
+                <div v-if="!inputPhoneValid" class="submitError">
+                  Кнопка станет активной, после заполнения номера телефона
+                </div>
+              </div>
             </form>
           </div>
           <div class="block"></div>
@@ -51,18 +80,49 @@
 
 <script>
 import Parallax from "@/assets/js/parallax.js";
+import Inputmask from "inputmask";
 
 export default {
   name: "Block6",
   components: {},
   data() {
-    return {};
+    return {
+      inputName: "",
+      inputPhone: "",
+      inputPhoneValid: false,
+    };
   },
-  methods: {},
+  methods: {
+    sendForm() {
+      if (this.inputPhoneValid) {
+        this.axios
+          .post("http://194.58.107.40:3000/api/send", {
+            inputName: this.inputName,
+            inputPhone: this.inputPhone,
+          })
+          .then((response) => {
+            if (response.data.status == "ok") {
+              this.inputPhone = "";
+              this.inputName = "";
+            }
+          });
+      }
+    },
+  },
   mounted() {
     const parallaxInstance = new Parallax(this.$refs.scene, {
       relativeInput: true,
     });
+
+    const inputPhone = new Inputmask("+7 (999) 999 99 99");
+    inputPhone.mask(this.$refs.inputPhone);
+  },
+  watch: {
+    inputPhone(val) {
+      let n = val.match(/\d/g);
+      n = n ? (n = n.length) : 0;
+      this.inputPhoneValid = true ? n == 11 : (this.inputPhoneValid = false);
+    },
   },
 };
 </script>
@@ -167,6 +227,7 @@ form {
   border-radius: 10px;
   background: #ffffff0d;
   margin: 10px 0;
+  position: relative;
 }
 .input__icon {
   background: white;
@@ -188,6 +249,11 @@ input {
 input::placeholder {
   font-size: 14px;
 }
+.inputPhoneValid {
+  position: absolute;
+  width: 20px;
+  right: 15px;
+}
 .submit {
   background: #e00020;
   color: white;
@@ -198,12 +264,26 @@ input::placeholder {
   border-radius: 10px;
   margin-top: 20px;
   box-shadow: 0px 0px 25px rgb(224 0 32 / 65%);
+  transition: 0.5s;
+  position: relative;
+}
+.submitError {
+  font-weight: 100;
+  font-size: 13px;
+  color: white;
+  position: absolute;
+  bottom: -45px;
 }
 @media (max-width: 1500px) {
 }
 @media (max-width: 1199.98px) {
 }
 @media (max-width: 991.98px) {
+  #scene div:nth-child(3) img {
+    width: 200px;
+    left: 7vw;
+    top: 617px;
+  }
 }
 @media (max-width: 767.98px) {
 }
