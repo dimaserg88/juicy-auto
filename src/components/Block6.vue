@@ -96,7 +96,7 @@ export default {
     sendForm() {
       if (this.inputPhoneValid) {
         this.axios
-          .post("http://194.58.107.40:3000/api/send", {
+          .post("https://api.juicy-auto.ru/api/send", {
             inputName: this.inputName,
             inputPhone: this.inputPhone,
           })
