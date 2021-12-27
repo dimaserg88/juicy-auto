@@ -5,7 +5,6 @@
         <span>Запреты</span>
         <span>Юридические проблемы</span>
         <span>В Залоге</span>
-        <span>Дтп</span>
         <span>Не на ходу</span>
         <span>Срочно</span>
         <span>В кредите</span>

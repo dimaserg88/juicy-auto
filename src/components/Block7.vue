@@ -48,7 +48,7 @@
               </div>
             </transition>
           </div>
-          <div class="question" :class="{ active: isActive[3] }">
+          <!-- <div class="question" :class="{ active: isActive[3] }">
             <div class="q__header" @click="openQuestion(3)">
               <div class="q__title">
                 Можно ли получить деньги под залог ПТС?
@@ -62,7 +62,7 @@
                 Более детальную информацию получите у наших экспертов.
               </div>
             </transition>
-          </div>
+          </div> -->
           <div class="question" :class="{ active: isActive[4] }">
             <div class="q__header" @click="openQuestion(4)">
               <div class="q__title">

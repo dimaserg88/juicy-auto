@@ -21,7 +21,11 @@
           </ul>
         </div>
         <div class="block">
-          <div class="btn-min"><span>связаться</span></div>
+          <a
+            href="https://api.whatsapp.com/send/?phone=79775837362"
+            class="btn-min"
+            ><span>связаться</span></a
+          >
           <div class="contacts">
             <a class="phone" href="tel:+79775837362">8 977 583 73 62</a>
             <span class="region">Московская область</span>

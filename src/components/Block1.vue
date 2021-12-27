@@ -17,16 +17,19 @@
     <div class="container">
       <div class="content">
         <div class="block">
-          <div class="sub-title">Ориентируемся на рынок</div>
+          <div class="sub-title">Выкупаем по рыночной стоимости</div>
           <h1 class="title">
             <div class="line">Выкуп</div>
             <div>любого</div>
             <div>автомобиля</div>
           </h1>
-          <div class="btn-max">
+          <a
+            href="https://api.whatsapp.com/send/?phone=79775837362"
+            class="btn-max"
+          >
             <span>Оценить</span>
             <img src="@/assets/img/arrow-right.svg" alt="" />
-          </div>
+          </a>
         </div>
         <div class="block">
           <div ref="scene" id="scene">
@@ -771,7 +774,7 @@ svg {
 .sub-title {
   text-transform: uppercase;
   font-size: 10px;
-  line-height: 12px;
+  line-height: 20px;
   letter-spacing: 0.45em;
   color: #e00020;
 }

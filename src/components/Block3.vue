@@ -26,11 +26,6 @@
         <div class="title">
           <div class="line">Все прозрачно</div>
         </div>
-        <div class="text">
-          Мы выкупаем автомобили как в хорошем состоянии, так и в плохом. Под
-          плохим мы подразумеваем, что машина битая или была в дтп, на машину
-          наложенны запреты или ограничения.
-        </div>
         <div class="blocks">
           <div class="block">
             <div class="item">
@@ -195,14 +190,6 @@ export default {
   bottom: 18px;
   left: calc(50% - 47%);
   z-index: -1;
-}
-.text {
-  font-size: 16px;
-  text-align: center;
-  color: #4b4b4b;
-  line-height: 20px;
-  max-width: 600px;
-  margin: 0 auto;
 }
 .blocks {
   margin-top: 100px;
