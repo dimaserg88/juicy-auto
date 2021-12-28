@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section id="nota" class="section">
     <div class="container">
       <div class="content">
         <div class="title">

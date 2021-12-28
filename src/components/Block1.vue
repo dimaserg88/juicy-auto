@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section id="home" class="section">
     <marquee class="bg-text-1">Juicy</marquee>
     <marquee class="bg-text-2" direction="right">Auto</marquee>
     <div class="ugol-top-left" :class="isUgl ? 'show' : ''"></div>

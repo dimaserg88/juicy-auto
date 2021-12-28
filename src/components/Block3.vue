@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section id="conditions" class="section">
     <div ref="scene" id="scene">
       <div data-depth="0.1">
         <img src="@/assets/img/block3/treug.svg" alt="" />
@@ -252,7 +252,7 @@ export default {
   width: 415px;
   transform: rotate(23deg);
   right: 0;
-  top: 410px;
+  top: 350px;
 }
 @media (max-width: 1500px) {
 }

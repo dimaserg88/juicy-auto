@@ -14,10 +14,10 @@
             <span></span>
           </div>
           <ul :class="isOpenMenu ? 'active' : ''">
-            <li><a href="#">главная</a></li>
-            <li><a href="#">условия</a></li>
-            <li><a href="#">оценка авто</a></li>
-            <li><a href="#">контакты</a></li>
+            <li><a href="#home">главная</a></li>
+            <li><a href="#conditions">условия</a></li>
+            <li><a href="#nota">оценка авто</a></li>
+            <li><a href="#contacts">контакты</a></li>
           </ul>
         </div>
         <div class="block">

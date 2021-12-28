@@ -91,6 +91,19 @@
               </div>
             </transition>
           </div>
+          <div class="question" :class="{ active: isActive[6] }">
+            <div class="q__header" @click="openQuestion(6)">
+              <div class="q__title">Выкупаете ли Вы автомобили на разбор?</div>
+              <div class="q__open">+</div>
+            </div>
+            <transition name="fade">
+              <div v-show="isActive[6]" class="q__response">
+                Да, мы можем выкупить Ваш автомобиль, который далее пойдет на
+                разбор и последующую продажу по запчастям. Свяжитесь с нами и мы
+                оценим Ваш авто прямо сейчас.
+              </div>
+            </transition>
+          </div>
         </div>
       </div>
     </div>
@@ -103,7 +116,7 @@ export default {
   components: {},
   data() {
     return {
-      isActive: [false, false, false, false, false, false, false],
+      isActive: [false, false, false, false, false, false, false, false],
     };
   },
   methods: {

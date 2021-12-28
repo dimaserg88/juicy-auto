@@ -3,6 +3,7 @@
   <Block1 />
   <Block2 />
   <Block3 />
+  <Block301 />
   <Block4 />
   <Block5 />
   <Block6 />
@@ -16,6 +17,7 @@ import Navbar from "@/components/Navbar.vue";
 import Block1 from "@/components/Block1.vue";
 import Block2 from "@/components/Block2.vue";
 import Block3 from "@/components/Block3.vue";
+import Block301 from "@/components/Block301.vue";
 import Block4 from "@/components/Block4.vue";
 import Block5 from "@/components/Block5.vue";
 import Block6 from "@/components/Block6.vue";
@@ -30,6 +32,7 @@ export default {
     Block1,
     Block2,
     Block3,
+    Block301,
     Block4,
     Block5,
     Block6,
