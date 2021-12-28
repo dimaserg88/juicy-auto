@@ -27,7 +27,7 @@
             ><span>связаться</span></a
           >
           <div class="contacts">
-            <a class="phone" href="tel:+79775837362">8 977 583 73 62</a>
+            <a class="phone" href="tel:+79775837362">8 977 583 73 61</a>
             <span class="region">Московская область</span>
           </div>
         </div>
