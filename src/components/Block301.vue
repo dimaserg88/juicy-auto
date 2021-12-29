@@ -1,5 +1,5 @@
 <template>
-  <section id="nota" class="section">
+  <section class="section">
     <div class="container">
       <div class="content">
         <div class="sub-title">Наши компетенции</div>
@@ -25,7 +25,7 @@
                 <img src="@/assets/img/block301/star_y.svg" alt="" />
                 <img src="@/assets/img/block301/star_y.svg" alt="" />
               </div>
-              <div class="item__count">~ 1000 авто</div>
+              <div class="item__count">~ 310 авто</div>
             </div>
           </div>
           <div class="item">
@@ -42,7 +42,7 @@
                 <img src="@/assets/img/block301/star_y.svg" alt="" />
                 <img src="@/assets/img/block301/star_y.svg" alt="" />
               </div>
-              <div class="item__count">~ 800 авто</div>
+              <div class="item__count">~ 180 авто</div>
             </div>
           </div>
           <div class="item">
@@ -56,10 +56,10 @@
                 <img src="@/assets/img/block301/star_y.svg" alt="" />
                 <img src="@/assets/img/block301/star_y.svg" alt="" />
                 <img src="@/assets/img/block301/star_y.svg" alt="" />
-                <img src="@/assets/img/block301/star_g.svg" alt="" />
-                <img src="@/assets/img/block301/star_g.svg" alt="" />
+                <img src="@/assets/img/block301/star_y.svg" alt="" />
+                <img src="@/assets/img/block301/star_yg.svg" alt="" />
               </div>
-              <div class="item__count">~ 200 авто</div>
+              <div class="item__count">~ 70 авто</div>
             </div>
           </div>
           <div class="item">
@@ -73,10 +73,10 @@
                 <img src="@/assets/img/block301/star_y.svg" alt="" />
                 <img src="@/assets/img/block301/star_y.svg" alt="" />
                 <img src="@/assets/img/block301/star_y.svg" alt="" />
+                <img src="@/assets/img/block301/star_y.svg" alt="" />
                 <img src="@/assets/img/block301/star_yg.svg" alt="" />
-                <img src="@/assets/img/block301/star_g.svg" alt="" />
               </div>
-              <div class="item__count">~ 600 авто</div>
+              <div class="item__count">~ 90 авто</div>
             </div>
           </div>
           <div class="item">
@@ -89,11 +89,11 @@
               <div class="item__stars">
                 <img src="@/assets/img/block301/star_y.svg" alt="" />
                 <img src="@/assets/img/block301/star_y.svg" alt="" />
-                <img src="@/assets/img/block301/star_yg.svg" alt="" />
-                <img src="@/assets/img/block301/star_g.svg" alt="" />
+                <img src="@/assets/img/block301/star_y.svg" alt="" />
+                <img src="@/assets/img/block301/star_y.svg" alt="" />
                 <img src="@/assets/img/block301/star_g.svg" alt="" />
               </div>
-              <div class="item__count">~ 100 авто</div>
+              <div class="item__count">~ 30 авто</div>
             </div>
           </div>
           <div class="item">
@@ -106,11 +106,11 @@
               <div class="item__stars">
                 <img src="@/assets/img/block301/star_y.svg" alt="" />
                 <img src="@/assets/img/block301/star_y.svg" alt="" />
-                <img src="@/assets/img/block301/star_g.svg" alt="" />
-                <img src="@/assets/img/block301/star_g.svg" alt="" />
-                <img src="@/assets/img/block301/star_g.svg" alt="" />
+                <img src="@/assets/img/block301/star_y.svg" alt="" />
+                <img src="@/assets/img/block301/star_y.svg" alt="" />
+                <img src="@/assets/img/block301/star_yg.svg" alt="" />
               </div>
-              <div class="item__count">~ 50 авто</div>
+              <div class="item__count">~ 27 авто</div>
             </div>
           </div>
         </div>

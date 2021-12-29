@@ -6,7 +6,7 @@
         <div class="blocks">
           <div class="block">
             <div class="sub-title">Телефон</div>
-            <a href="tel:89775837362" class="text">8 977 583 73 62</a>
+            <a href="tel:+79255647665" class="text">8 925 564 76 65</a>
           </div>
           <div class="block">
             <div class="sub-title">E-mail</div>
@@ -16,9 +16,7 @@
           </div>
           <div class="block">
             <div class="sub-title">Адрес</div>
-            <div class="text">
-              Московская область, г. Одинцово, ул. Можайское шоссе 66
-            </div>
+            <div class="text">Московская область, г. Одинцово</div>
           </div>
         </div>
       </div>

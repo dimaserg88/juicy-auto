@@ -8,66 +8,55 @@
         </div>
       </div>
     </div>
-    <swiper
-      :breakpoints="swiperOptions.breakpoints"
-      :modules="modules"
-      :slides-per-view="1"
-      :space-between="20"
-      loop="true"
-      @swiper="onSwiper"
-      @slideChange="onSlideChange"
-    >
-      <swiper-slide>
-        <img
-          src="https://www.a777aa77.ru/hamann/2015-bmw-x6-m50d-hamann-widebody-f16.jpg"
-          alt=""
-          class="swiper-img"
-        />
-        <div class="swiper-title">BMW X6 2015</div>
-        <div class="swiper-price">2.450.000 Р</div>
-      </swiper-slide>
-      <swiper-slide>
-        <img
-          src="https://www.a777aa77.ru/hamann/2015-bmw-x6-m50d-hamann-widebody-f16.jpg"
-          alt=""
-          class="swiper-img"
-        />
-        <div class="swiper-title">BMW X6 2015</div>
-        <div class="swiper-price">2.450.000 Р</div>
-      </swiper-slide>
-      <swiper-slide>
-        <img
-          src="https://www.a777aa77.ru/hamann/2015-bmw-x6-m50d-hamann-widebody-f16.jpg"
-          alt=""
-          class="swiper-img"
-        />
-        <div class="swiper-title">BMW X6 2015</div>
-        <div class="swiper-price">2.450.000 Р</div>
-      </swiper-slide>
-      <swiper-slide>
-        <img
-          src="https://www.a777aa77.ru/hamann/2015-bmw-x6-m50d-hamann-widebody-f16.jpg"
-          alt=""
-          class="swiper-img"
-        />
-        <div class="swiper-title">BMW X6 2015</div>
-        <div class="swiper-price">2.450.000 Р</div>
-      </swiper-slide>
-      <swiper-slide>
-        <img
-          src="https://www.a777aa77.ru/hamann/2015-bmw-x6-m50d-hamann-widebody-f16.jpg"
-          alt=""
-          class="swiper-img"
-        />
-        <div class="swiper-title">BMW X6 2015</div>
-        <div class="swiper-price">2.450.000 Р</div>
-      </swiper-slide>
-    </swiper>
+    <div ref="swiperAuto" class="swiper-container-auto">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="@/assets/img/block4/solaris2018.jpg"
+            alt=""
+            class="swiper-img"
+          />
+          <div class="swiper-title">Hyundai Solaris 2018 года</div>
+          <div class="swiper-price">620.000 Р</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="@/assets/img/block4/mlamg.jpg" alt="" class="swiper-img" />
+          <div class="swiper-title">Mercedes ML 63 AMG</div>
+          <div class="swiper-price">1.300.000 Р</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="@/assets/img/block4/kiak5.jpg" alt="" class="swiper-img" />
+          <div class="swiper-title">Kia K5 2020 года</div>
+          <div class="swiper-price">1.750.000 Р</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="@/assets/img/block4/camry.jpg" alt="" class="swiper-img" />
+          <div class="swiper-title">Toyota Camry 2.5 2019 года</div>
+          <div class="swiper-price">1.650.000 Р</div>
+        </div>
+        <div class="swiper-slide">
+          <img src="@/assets/img/block4/prado.jpg" alt="" class="swiper-img" />
+          <div class="swiper-title">Toyota Land Cruiser Prado 2013 года</div>
+          <div class="swiper-price">2.300.000 Р</div>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="@/assets/img/block4/bmw2012.jpg"
+            alt=""
+            class="swiper-img"
+          />
+          <div class="swiper-title">BMW 5 2012 года</div>
+          <div class="swiper-price">1.000.000 Р</div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from "swiper/vue";
+import Swiper, { Autoplay } from "swiper";
+Swiper.use([Autoplay]);
+
 // swiper bundle styles
 import "swiper/swiper-bundle.min.css";
 
@@ -76,29 +65,27 @@ import "swiper/swiper.min.css";
 
 export default {
   name: "Block4",
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
+  components: {},
   data() {
-    return {};
+    return {
+      swiperElAuto: null,
+    };
   },
   methods: {},
-  setup() {
-    const onSwiper = (swiper) => {};
-    const onSlideChange = () => {};
-    return {
-      onSwiper,
-      onSlideChange,
-      modules: [],
-      swiperOptions: {
-        breakpoints: {
-          575.98: { slidesPerView: 2 },
-          767.98: { slidesPerView: 3 },
-          1199.98: { slidesPerView: 4 },
-        },
+  mounted() {
+    const mySwiperAuto = new Swiper(".swiper-container-auto", {
+      autoplay: true,
+      speed: 1000,
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        575.98: { slidesPerView: 2 },
+        767.98: { slidesPerView: 3 },
+        1199.98: { slidesPerView: 3 },
       },
-    };
+    });
+    this.swiperElAuto = this.$refs.swiperAuto.swiper;
   },
 };
 </script>
@@ -163,8 +150,8 @@ export default {
   left: calc(50% - 47%);
   z-index: -1;
 }
-.swiper-container {
-  padding: 20px 0;
+.swiper-container-auto {
+  overflow: hidden;
 }
 .swiper-slide {
   background: #0a0a0a;
@@ -204,6 +191,9 @@ export default {
 @media (max-width: 991.98px) {
 }
 @media (max-width: 767.98px) {
+  .swiper-title {
+    font-size: 16px;
+  }
 }
 @media (max-width: 575.98px) {
   .title {

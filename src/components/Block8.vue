@@ -137,6 +137,12 @@
 import Swiper, { Autoplay } from "swiper";
 Swiper.use([Autoplay]);
 
+// swiper bundle styles
+import "swiper/swiper-bundle.min.css";
+
+// swiper core styles
+import "swiper/swiper.min.css";
+
 export default {
   name: "Block8",
   components: {},
@@ -156,7 +162,7 @@ export default {
   mounted() {
     const mySwiper = new Swiper(".swiper-container", {
       autoplay: true,
-      speed: 3000,
+      speed: 1000,
       loop: true,
       slidesPerView: 1,
       spaceBetween: 20,

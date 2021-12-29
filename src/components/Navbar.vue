@@ -14,20 +14,20 @@
             <span></span>
           </div>
           <ul :class="isOpenMenu ? 'active' : ''">
-            <li><a href="#home">главная</a></li>
-            <li><a href="#conditions">условия</a></li>
-            <li><a href="#nota">оценка авто</a></li>
-            <li><a href="#contacts">контакты</a></li>
+            <li><a @click="openMenu" href="#home">главная</a></li>
+            <li><a @click="openMenu" href="#conditions">условия</a></li>
+            <li><a @click="openMenu" href="#nota">оценка авто</a></li>
+            <li><a @click="openMenu" href="#contacts">контакты</a></li>
           </ul>
         </div>
         <div class="block">
           <a
-            href="https://api.whatsapp.com/send/?phone=79775837362"
+            href="https://api.whatsapp.com/send/?phone=79255647665"
             class="btn-min"
             ><span>связаться</span></a
           >
           <div class="contacts">
-            <a class="phone" href="tel:+79775837362">8 977 583 73 62</a>
+            <a class="phone" href="tel:+79255647665">8 925 564 76 65</a>
             <span class="region">Московская область</span>
           </div>
         </div>
