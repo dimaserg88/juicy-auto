@@ -16,7 +16,7 @@
           </div>
           <div class="block">
             <div class="sub-title">Адрес</div>
-            <div class="text">Московская область, г. Одинцово</div>
+            <div class="text">Москва, Кутузовский проспект, 36</div>
           </div>
         </div>
       </div>
