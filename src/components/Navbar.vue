@@ -22,12 +22,12 @@
         </div>
         <div class="block">
           <a
-            href="https://api.whatsapp.com/send/?phone=79255647665"
+            href="https://api.whatsapp.com/send/?phone=79254552555"
             class="btn-min"
             ><span>связаться</span></a
           >
           <div class="contacts">
-            <a class="phone" href="tel:+79255647665">8 925 564 76 65</a>
+            <a class="phone" href="tel:+79254552555">8 925 455 25 55</a>
             <span class="region">Московская область</span>
           </div>
         </div>

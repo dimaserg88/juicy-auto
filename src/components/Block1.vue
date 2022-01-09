@@ -24,7 +24,7 @@
             <div>автомобиля</div>
           </h1>
           <a
-            href="https://api.whatsapp.com/send/?phone=79255647665"
+            href="https://api.whatsapp.com/send/?phone=79254552555"
             class="btn-max"
           >
             <span>Оценить</span>

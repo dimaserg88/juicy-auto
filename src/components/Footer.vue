@@ -6,7 +6,7 @@
         <div class="blocks">
           <div class="block">
             <div class="sub-title">Телефон</div>
-            <a href="tel:+79255647665" class="text">8 925 564 76 65</a>
+            <a href="tel:+79254552555" class="text">8 925 455 25 55</a>
           </div>
           <div class="block">
             <div class="sub-title">E-mail</div>
