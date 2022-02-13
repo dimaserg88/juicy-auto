@@ -60,6 +60,12 @@
               Кнопка станет активной, после заполнения номера телефона
             </div>
           </div>
+          <div v-if="sendFormStatus" class="okSendForm">
+            <div class="okSendForm__title">Спасибо за заявку!</div>
+            <div class="okSendForm__text">
+              Мы перезвоним Вам в течение 30 минут
+            </div>
+          </div>
         </form>
       </div>
     </div>
@@ -78,6 +84,7 @@ export default {
       inputName: "",
       inputPhone: "",
       inputPhoneValid: false,
+      sendFormStatus: false,
     };
   },
   methods: {
@@ -94,6 +101,8 @@ export default {
               this.inputPhone = "";
               this.inputName = "";
               this.markaAuto = "";
+              this.sendFormStatus = true;
+              setTimeout(() => (this.sendFormStatus = false), 10000);
             }
           });
       }
@@ -165,6 +174,35 @@ export default {
   left: calc(50% - 47%);
   z-index: -1;
 }
+form {
+  display: inline-block;
+  background: #ffffff14;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.okSendForm {
+  position: absolute;
+  background: white;
+  width: calc(100% - 40px);
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.okSendForm__title {
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+}
+.okSendForm__text {
+  text-align: center;
+  margin-top: 15px;
+}
 .input__wrap {
   max-width: 340px;
   display: flex;
@@ -219,7 +257,7 @@ input::placeholder {
   font-size: 13px;
   color: white;
   position: absolute;
-  bottom: -45px;
+  bottom: -60px;
 }
 
 @media (max-width: 1500px) {
