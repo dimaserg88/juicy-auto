@@ -47,12 +47,6 @@ export default {
   methods: {
     openMenu() {
       this.isOpenMenu = !this.isOpenMenu;
-      const html = document.querySelector("html");
-      if (this.isOpenMenu) {
-        html.classList.add("hidden");
-      } else {
-        html.classList.remove("hidden");
-      }
     },
   },
 };
